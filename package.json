@@ -1,6 +1,6 @@
 {
   "name": "worldometer-coronavirus-info",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "An easy to use worldometer coronavirus information at ease",
   "main": "index.js",
   "directories": {
