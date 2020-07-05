@@ -7,10 +7,10 @@ npm i worldometer-coronavirus-info
 ```
 # Features
 -Fetched Information Directly from worldometer.info and is accurate
--Very simple to use
--Lightweight
--Easy to understand with docs
-#Example
+-Very simple to use\n
+-Lightweight\n
+-Easy to understand with docs\n
+# Example
 ```js
 const client = require('worldometer-coronavirus-info')
 const worldometer = new client()
