@@ -1,0 +1,19 @@
+{
+  "name": "worldometer-coronavirus-info",
+  "version": "1.0.0",
+  "description": "An easy to use worldometer coronavirus information at ease",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["covid19-api","coronavirus","covid19","coronavirus-api","worldometer"],
+  "author": "abh80",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
