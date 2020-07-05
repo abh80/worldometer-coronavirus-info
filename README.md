@@ -6,10 +6,10 @@ This is a npm package which will help you to fetch details directly from worldom
 npm i worldometer-coronavirus-info
 ```
 # Features
--Fetched Information Directly from worldometer.info and is accurate
--Very simple to use\n
--Lightweight\n
--Easy to understand with docs\n
+- Fetched Information Directly from worldometer.info and is accurate
+- Very simple to use
+- Lightweight
+- Easy to understand with docs
 # Example
 ```js
 const client = require('worldometer-coronavirus-info')
