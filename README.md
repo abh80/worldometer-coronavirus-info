@@ -12,8 +12,7 @@ npm i worldometer-coronavirus-info
 - Easy to understand with docs
 # Example
 ```js
-const client = require('worldometer-coronavirus-info')
-const worldometer = new client()
+const worldometer = require('worldometer-coronavirus-info')
 const corona = worldometer.trackAll()//returns object
 ```
 # Using Global Data
