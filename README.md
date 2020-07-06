@@ -25,13 +25,13 @@ const corona = await worldometer.trackCountry()//returns object or throw error i
 # Golbal Data Properties
 The following are given property for **Global Data**
 | Properties | Description |
-| :---:      |  :---:       |
+| :---   |  :---       |
 | totalCases | Gives total cases|
 | totalDeaths| Gives total Death|
 | totalRecovered| Gives total Recovered|
 | activeCases| Gives Active Cases|
 | closedCases| Gives the cases which had an outcome|
-If you are having trouble understanding this pls scroll a bit down
+- If you are having trouble understanding this pls scroll a bit down
 # Country Data Properties
 The following are given property for **Country Data**
 | Properties | Description |
@@ -44,7 +44,7 @@ The following are given property for **Country Data**
 |closedCases#total|Gives total closed cases number|
 |country#flagImg|Gives image of flag of the country in gif format but is static|
 |country#name|Gives the country name|
-If you are having trouble understanding this pls scroll a bit down
+- If you are having trouble understanding this pls scroll a bit down
 # Using Global Data
 ```js
 const corona = worldometer.trackAll()//returns object
