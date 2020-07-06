@@ -66,3 +66,6 @@ const closedCases = corona.closedCases.total
 const flagImg = corona.country.flagImg //returns flag image ex:https://www.worldometers.info/img/flags/small/tn_us-flag.gif
 const countryName = corona.country.name
 ```
+# Changelog
+<h1>V 2.2.6<\h1>
+ - Added Typescript support!!
