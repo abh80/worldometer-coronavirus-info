@@ -1,6 +1,6 @@
 # worldometer-coronavirus-info V2
 This is a npm package which will help you to fetch details directly from worldometer.info.
-
+<img src =https://nodei.co/npm/worldometer-coronavirus-info.png>
 # Installing
 ```bash
 npm i worldometer-coronavirus-info
@@ -67,5 +67,5 @@ const flagImg = corona.country.flagImg //returns flag image ex:https://www.world
 const countryName = corona.country.name
 ```
 # Changelog
-<h1>V 2.2.6<\h1>
+<h3>V 2.2.6
  - Added Typescript support!!
