@@ -12,6 +12,7 @@ npm i worldometer-coronavirus-info
 - Easy to understand with docs
 - Returns Country flag and name, which is very usefull in some cases
 # Example
+
 - Global Data
 ```js
 const worldometer = require('worldometer-coronavirus-info')
@@ -47,7 +48,7 @@ The following are given property for **Country Data**
 - If you are having trouble understanding this pls scroll a bit down
 # Using Global Data
 ```js
-const corona = worldometer.trackAll()//returns object
+const corona =await worldometer.trackAll()//returns object
 const totalCases = corona.totalCases //returns total cases
 const totalDeaths = corona.totalDeaths
 const totalRecovered = corona.totalRecovered
