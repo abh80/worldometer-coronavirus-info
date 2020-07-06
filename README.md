@@ -31,13 +31,21 @@ The following are given property for **Global Data**
 | totalRecovered| Gives total Recovered|
 | activeCases| Gives Active Cases|
 | closedCases| Gives the cases which had an outcome|
-# Using Country Data
+If you are having trouble understanding this pls scroll a bit down
+# Country Data Properties
+The following are given property for **Country Data**
 | Properties | Description |
-| :---:      |  :---:       |
+| :---  |  :---       |
 |cases#totalCases|Gives total Cases|
 |cases#recovered|Gives total recovered|
-|cases
-
+|cases#deaths|Gives total deaths|
+|closedCases#percentage#discharge|Gives discharge percent|
+|closedCases#percentage#death|Gives Death Percent|
+|closedCases#total|Gives total closed cases number|
+|country#flagImg|Gives image of flag of the country in gif format but is static|
+|country#name|Gives the country name|
+If you are having trouble understanding this pls scroll a bit down
+# Using Global Data
 ```js
 const corona = worldometer.trackAll()//returns object
 const totalCases = corona.totalCases //returns total cases
