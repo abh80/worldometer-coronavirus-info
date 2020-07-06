@@ -22,6 +22,11 @@ const corona = await worldometer.trackAll()//returns object
 const worldometer = require('worldometer-coronavirus-info')
 const corona = await worldometer.trackCountry()//returns object or throw error if false country or no country was provided
  ```
+# Golbal Data Properties
+| Properties | Description |
+| :---       |  ---:       |
+| totalCases | Gives total cases|
+|
 # Using Global Data
 ```js
 const corona = worldometer.trackAll()//returns object
