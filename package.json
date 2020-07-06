@@ -3,7 +3,7 @@
   "version": "2.2.5",
   "description": "An easy to use worldometer coronavirus information at ease",
   "main": "index.js",
-  "types":"typings/worldometer-coronavirus-info.d.ts",
+  "types":"typings/main.d.ts",
   "directories": {
     "lib": "lib"
   },
