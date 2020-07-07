@@ -1,4 +1,4 @@
-export default class worldometer {
+export class worldometer {
     version: string;
     constructor();
     static trackAll(): Promise<{
