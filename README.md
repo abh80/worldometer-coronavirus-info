@@ -88,7 +88,7 @@ const countryName = corona.country.name
     "lib": ["es2018", "dom"],
     "strict": true
     }
-    }
+}
 ```
 # Changelog
 <h3>V 2.2.6
