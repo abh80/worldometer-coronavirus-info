@@ -72,6 +72,24 @@ const closedCases = corona.closedCases.total
 const flagImg = corona.country.flagImg //returns flag image ex:https://www.worldometers.info/img/flags/small/tn_us-flag.gif
 const countryName = corona.country.name
 ```
+# Typescript
+- here is an compiler example to use this package
+```ts
+{
+    "compilerOptions": {
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "esModuleInterop":true,
+    "target": "ES2018", 
+    "module": "commonjs",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "lib": ["es2018", "dom"],
+    "strict": true
+    }
+    }
+```
 # Changelog
 <h3>V 2.2.6
  - Added Typescript support!!
