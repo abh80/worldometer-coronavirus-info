@@ -70,3 +70,5 @@ const countryName = corona.country.name
 # Changelog
 <h3>V 2.2.6
  - Added Typescript support!!
+<h3>V 2.8.0
+- Rewritten in typescript.

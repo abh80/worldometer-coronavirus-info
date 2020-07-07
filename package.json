@@ -1,6 +1,6 @@
 {
   "name": "worldometer-coronavirus-info",
-  "version": "2.2.7",
+  "version": "2.8.0",
   "description": "An easy to use worldometer coronavirus information at ease",
   "main": "dist/index.js",
   "types": "typings/main.d.ts",
