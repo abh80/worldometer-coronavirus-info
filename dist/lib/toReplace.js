@@ -11,7 +11,7 @@ const replacerValue = {
     'usa': 'us',
     'united states of america': 'us'
 };
-module.exports = function checkReplace(query) {
+module.exports.checkReplace=(query)=> {
     replacer.includes(query) ? query = replacerValue[query] : query = query;
     return query;
 };

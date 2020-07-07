@@ -80,5 +80,5 @@ class worldometer {
         }
     }
 }
-exports.default = worldometer;
+module.exports = worldometer;
 //# sourceMappingURL=main.js.map
