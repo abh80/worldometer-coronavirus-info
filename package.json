@@ -1,24 +1,28 @@
 {
   "name": "worldometer-coronavirus-info",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "description": "An easy to use worldometer coronavirus information at ease",
-  "main": "index.js",
-  "types":"typings/main.d.ts",
-  "directories": {
-    "lib": "lib"
-  },
-  "homepage":"https://github.com/abh80/worldometer-coronavirus-info#worldometer-coronavirus-info-v2",
+  "main": "dist/index.js",
+  "types": "typings/main.d.ts",
+  "homepage": "https://github.com/abh80/worldometer-coronavirus-info#worldometer-coronavirus-info-v2",
   "repository": {
     "type": "git",
     "url": "https://github.com/abh80/worldometer-coronavirus-info"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
-  "keywords": ["covid19-api","coronavirus","covid19","coronavirus-api","worldometer"],
+  "keywords": [
+    "covid19-api",
+    "coronavirus",
+    "covid19",
+    "coronavirus-api",
+    "worldometer"
+  ],
   "author": "abh80",
   "license": "MIT",
   "dependencies": {
+    "@types/cheerio": "^0.22.20",
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3"
   }
