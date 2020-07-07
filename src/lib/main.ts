@@ -1,7 +1,7 @@
 import axios from 'axios'
 import ch from 'cheerio'
 import functions from './toReplace'
-export default class worldometer {
+export class worldometer {
 version:string
 
   constructor(){

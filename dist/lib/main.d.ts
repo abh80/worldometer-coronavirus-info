@@ -8,7 +8,7 @@ export class worldometer {
         activeCases: string | null;
         closedCases: string;
     }>;
-    static trackCountry(query: string): Promise<{
+    static trackCountry(query: any): Promise<{
         country: {
             name: string;
             flagImg: string;

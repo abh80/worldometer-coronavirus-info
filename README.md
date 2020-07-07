@@ -23,6 +23,11 @@ const corona = await worldometer.trackAll()//returns object
 const worldometer = require('worldometer-coronavirus-info')
 const corona = await worldometer.trackCountry()//returns object or throw error if false country or no country was provided
  ```
+- Typescript Example
+```ts
+import worldometer from 'worldometer-coronavirus-info'
+const corona = await worldometer.trackAll()
+```
 # Golbal Data Properties
 The following are given property for **Global Data**
 | Properties | Description |
