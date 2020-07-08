@@ -1,4 +1,4 @@
-# worldometer-coronavirus-info V2
+# worldometer-coronavirus-info V3
 This is a npm package which will help you to fetch details directly from worldometer.info.
 <img src =https://nodei.co/npm/worldometer-coronavirus-info.png>
 # Installing
@@ -37,6 +37,8 @@ The following are given property for **Global Data**
 | totalRecovered| Gives total Recovered|
 | activeCases| Gives Active Cases|
 | closedCases| Gives the cases which had an outcome|
+|condition#mild|Gives Mild condition number|
+|condition#critical|Gives critical condition number|
 - If you are having trouble understanding this pls scroll a bit down
 # Country Data Properties
 The following are given property for **Country Data**
@@ -59,6 +61,8 @@ const totalDeaths = corona.totalDeaths
 const totalRecovered = corona.totalRecovered
 const activeCases = corona.activeCases
 const closedCases = corona.closedCases
+const mildCases = corona.condition.mild
+const criticalCases=corona.condition.critical
 ```
 # Using Country Data
 ```js
@@ -95,3 +99,5 @@ const countryName = corona.country.name
  - Added Typescript support!!
 <h3>V 2.8.0
 - Rewritten in typescript.
+<h3>V 3.0.0
+- Added Mild And Critical Condition Count to global data

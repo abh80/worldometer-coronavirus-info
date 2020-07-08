@@ -1,12 +1,16 @@
-export class worldometer {
+export declare class worldometer {
     version: string;
     constructor();
     static trackAll(): Promise<{
         totalCases: string;
         totalDeaths: string;
         totalRecovered: string;
-        activeCases: string | null;
+        activeCases: string;
         closedCases: string;
+        condition: {
+            mild: string;
+            critical: string;
+        };
     }>;
     static trackCountry(query: any): Promise<{
         country: {

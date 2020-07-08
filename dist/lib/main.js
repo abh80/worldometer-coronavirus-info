@@ -3,12 +3,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.worldometer = void 0;
 const axios_1 = __importDefault(require("axios"));
 const cheerio_1 = __importDefault(require("cheerio"));
 const toReplace_1 = __importDefault(require("./toReplace"));
 class worldometer {
     constructor() {
-        this.version = require('../package.json');
+        this.version = require('../../package.json');
     }
     static async trackAll() {
         const { data: html } = await axios_1.default.get('https://www.worldometers.info/coronavirus/');
@@ -21,15 +22,26 @@ class worldometer {
         const totalCases = base[0];
         const totalDeaths = base[1];
         const totalRecovered = base[2];
-        const activeCases = $('body div.container div div.col-md-8 div div div div.panel-body div div.panel_front div.number-table-main').html();
-        //@ts-ignore
-        const closedCases = $('body div.container div div.col-md-8 div div div div.panel-body div div.panel_front div.number-table-main').text().slice(activeCases.length);
+        let activeCases = [];
+        $('body div.container div div.col-md-8 div div div div.panel-body div div.panel_front div div span').each(function (i, elem) {
+            //@ts-ignore
+            activeCases[i] = $(this).text();
+        });
+        let j = [];
+        $('body div.container div div.col-md-8 div div div div.panel-body div div.panel_front div.number-table-main').each(function (i, elem) {
+            //@ts-ignore
+            j[i] = $(this).text();
+        });
         const object = {
             totalCases: totalCases,
             totalDeaths: totalDeaths,
             totalRecovered: totalRecovered,
-            activeCases: activeCases,
-            closedCases: closedCases
+            activeCases: j[0],
+            closedCases: j[1],
+            condition: {
+                mild: activeCases[0],
+                critical: activeCases[1]
+            }
         };
         return object;
     }
