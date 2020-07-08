@@ -1,7 +1,7 @@
 # worldometer-coronavirus-info V3
 This is a npm package which will help you to fetch details directly from worldometer.info.
 <img src =https://nodei.co/npm/worldometer-coronavirus-info.png>
-Made with TypeScript!
+
 # Installing
 ```bash
 npm i worldometer-coronavirus-info
